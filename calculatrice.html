@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    
+        <label for="nombre1">Nombre-1<input type="number" name="nombre1" id="nombre1" value=1></label>
+        <label for="nombre2">Nombre-2<input type="number" name="nombre2" id="nombre2" value=1></label>
+        <label for="operation">Operation<select name="operation" id="operation">
+            <option value="somme">somme</option>
+            <option value="difference">difference</option>
+            <option value="produit">produit</option>
+            <option value="division">division</option>
+        </select><button id="valider">Valider</button> </label>
+        <label for="resultat">Résultat <input type="number" name="resultat" id="resultat" disabled></label>
+        <label for="decimal">Decimal<input type="number" name="decimal" id="decimal"></label>
+        <label for="binaire">Binaire<input type="binaire" name="binaire" id="binaire" disabled></label>
+    
+</body>
+<script src="calculatrice.js"></script>
+</html>
