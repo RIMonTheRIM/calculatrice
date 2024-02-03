@@ -7,15 +7,52 @@
 </head>
 <style>
     body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family:"Roboto" ;
+        font-weight: bold;
+        background-color: #FDE2F3;
+    }
+    .content{
+        
+        color: #FDE2F3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 19em;
+        height: 22em;
+        background-color: #917FB3;
+        border-radius: 1em;
+        border: 0.2em solid #2A2F4F;
+    }
+    label{
+        width: 10em;
+    }
+    select{
+        width: 12.6em;
+    }
+    .title{
+        width: 100%;
+        line-height: 2em;
+        text-align: center;
+        background-color: #2A2F4F;
+        color: #FDE2F3;
     }
 </style>
 <body>
-    
-        <label for="nombre1">Nombre-1<input type="number" name="nombre1" id="nombre1" value=1></label>
-        <label for="nombre2">Nombre-2<input type="number" name="nombre2" id="nombre2" value=1></label>
-        <label for="operation">Operation<select name="operation" id="operation">
+    <div class="content">
+        <p class="title">Calculatrice</p>
+        <label for="nombre1">Nombre 1<input type="number" name="nombre1" id="nombre1" value=1></label>
+        <label for="nombre2">Nombre 2<input type="number" name="nombre2" id="nombre2" value=1></label>
+        <label for="operation">Opération<select name="operation" id="operation">
             <option value="somme">somme</option>
             <option value="difference">difference</option>
             <option value="produit">produit</option>
@@ -24,7 +61,7 @@
         <label for="resultat">Résultat <input type="number" name="resultat" id="resultat" disabled></label>
         <label for="decimal">Decimal<input type="number" name="decimal" id="decimal"></label>
         <label for="binaire">Binaire<input type="binaire" name="binaire" id="binaire" disabled></label>
-    
+    </div>
 </body>
 <script src="calculatrice.js"></script>
 </html>
